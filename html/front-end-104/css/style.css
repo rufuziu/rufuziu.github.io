@@ -1,0 +1,192 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+}
+
+p{
+    line-height: 2rem;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body{
+    min-width: 320px;
+    margin: 0px;
+    background-color: rgb(255,240,229);
+}
+
+header{
+    background-color: rgb(255,240,229);
+    margin: 0px;
+}
+
+header img{
+    min-width: 320px;
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+header h1{
+    text-align: center;
+    color: rgb(16, 22, 47);
+    margin: 0 auto;
+}
+
+header ul{
+    min-width: 320px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+header li{
+    display: inline;
+    line-height: 2rem;
+    margin: 2rem;
+}
+
+header a{
+    color: white;
+    background-color: rgb(16, 22, 47);
+    border: 3px solid silver;
+    border-radius: 10px;
+    padding: 0.7rem;
+}
+
+header a:hover{
+    color:yellow;
+}
+
+header a:active{
+    color: white;
+}
+
+header a:visited{
+    color: white;
+}
+
+#intro{
+    min-width: 320px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+#content{
+    min-width: 320px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#example-box{
+    height: 150px;
+    width: 300px;
+    margin: 0px auto;
+}
+
+#margin-box{
+    background-color: darkgrey;
+    margin: 0px auto;
+    padding-top: 8%;
+    width: 100%;
+    height: 150px;
+}
+
+#border-box{
+    background-color: black;
+    padding-top: 5%;
+    width: 80%;
+    height: 80%;
+    margin: 0px auto;
+}
+
+#padding-box{
+    background-color: blue;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+#content-box{
+    background-color: red;
+    width: 85%;
+    height: 70%;
+    margin: 0 auto;
+    padding-top: 22%;
+}
+
+.inline-block-ul li{
+    display: inline;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#example-ul li{
+    margin: 0px;
+    padding: 0px; 
+}
+
+code{
+    background-color: white;
+}
+
+#box-model-example{
+    width: 100%;
+    margin: 0 auto;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+
+h4{
+    background-color: red;
+    border: 2px solid black;
+}
+
+.block-example{
+    font-weight: bold;
+    background-color: red;
+    border: 2px solid black;
+}
+
+#inline-example{
+    border: 2px solid black;
+    background-color: purple;
+}
+
+#positions li{
+    margin: 20px;
+    line-height: 1.3rem;
+}
+
+@media screen and (max-width: 1013px){
+    #nav-menu li{
+        display: block;
+    }
+}

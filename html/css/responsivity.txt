@@ -1,0 +1,68 @@
+Responsive Web design is the technology to automatically respond 
+to the user’s preferences not blocking the user’s access to the page because
+the device.
+
+- adjusting screen resolution
+
+ variating of device's display make the engineer adjust WebPage for many
+devices users.
+	*flexible content;
+	*media queries.
+
+
+Relative Measurements
+
+Responsive design refers to the ability of a website to resize and 
+reorganize its content based on:
+
+1.The size of other content on the website.
+2.The size of the screen the website is being viewed on.
+
+Relative Measurement units
+ em checks the parent element were he nested to resize
+ if the parent element font is 16px:
+	1em = 16px;
+
+ rem (root em), similar to em, but he checks the root size
+ <html> to resize, if font-size of html is 20px:
+	2em = 40px;
+
+	This units is used to size text
+	
+To size non-text elements relative to their parent elements on page
+can be used percentages(%)
+When height and width are set using percentages, the
+ dimensions of child elements are calculated based on the dimensions 
+of the parent element.
+When percentages are used to set padding and margin, however,
+ they are calculated based only on the width of the parent element.
+
+Max & Min attribute
+Limit how wide an element can be.
+	min-width: 300px;
+	max-width: 600px;
+
+When a browser window is narrowed or widened, text can become either 
+very compressed or very spread out, making it difficult to read. These two
+ properties ensure that content is legible by limiting the minimum and maximum widths.
+
+Media Queries
+Uses in css
+	@media only [devices] and (max,min property){
+
+		}
+
+Range
+Is when delimits a limit
+	@media only screen and (min-width: 320px) and (max-width: 480px){
+			//width with 320 or <=480
+		}
+
+	
+DPI (Dots per Inch) dpc (dots per centimeter)
+	@media only screen and (min-resolution: 480dpi){
+		}
+
+And Operator and Comma Separated
+With 'and operator' the browser read the properties like a single specification, 
+ comma separated '(),()' browser will read and work when all properties are called 

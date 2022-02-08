@@ -1,57 +1,103 @@
-h2{
-  text-transform: uppercase;
-  font-family: "Comforter Brush","Comic Sans MS", sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
+@font-face {
+  font-family: Consolas;
+  src: url(../fonts/CONSOLAB.TTF) format('truetype');
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 16px;
+}
+
+#banner{
+  width: 100%;
+  background-color: silver
+}
+
+#banner img{
+   display: block;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   border: 2px solid black;
+   margin: 0 auto;
+}
+
+#descrição{
   text-align: center;
-  color: rgba(12,132,132,0.65);
-}
-body{
-  background-color: hsl(171,10%,85%);
-}
-main{
-  background-image: url('https://image.freepik.com/fotos-gratis/quadro-negro-verde-sujo_125540-774.jpg');
-  height:400px;
-  border: ridge gold 6px;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
-h1{
-  font-family: "Comforter Brush","Comic Sans MS", sans-serif;
+#nome{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem ;
+  color: black;
+  border: 1px black;
+}
+
+#local{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+#graduação{
+  font-family:  Consolas, Courier, monospace;
+  font-size: 1rem;  
+}
+
+#menu-bar{
+  max-width: 100%;
   text-align: center;
-  letter-spacing: 0.3em;
-}
-#c{
-  color: rgba(14,67,33,0.7);
-}
-#h{
-  color: rgba(71,41,222,0.5);
-}
-#e{
-  color: rgba(123,55,32,0.5);
-}
-#a{
-  color: rgba(95,51,56,0.6);
-}
-#t{
-  color: rgba(56,77,81,0.7);
-}
-#s{
-  color: rgba(95,57,84,0.7);
-}
-#table{
-  margin: auto;
+  margin-top: 10px;
 }
 
-#course,#game{
-  font-family: "Comforter Brush","Comic Sans MS", sans-serif;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.36);
-  border-color: rgba(255,255,255,0.34);
-}
-td,th{
-  border-right-style: dotted;
-  border-bottom-style: dotted;
+#menu-bar a{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-top: 25px;
+  font-family:  Consolas, Courier, monospace;
 }
 
+#menu-bar a:hover{
+  color: yellowgreen;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#menu-bar a:active{
+  color: blue;
+}
+
+#menu-bar a:visited{
+  color: black;
+}
+
+#menu-bar li{
+  display: block; 
+}
+
+@media screen and (max-width: 612px ){
+  #nome{
+    font-size: 1.47rem;
+    font-weight: bold;
+  }
+
+  #local{
+    font-size: 1rem;
+  }
+
+  #graduação{
+    font-size: 1rem;
+  }
+
+  #menu-bar li{
+    display: block;
+  }
+}
 

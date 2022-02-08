@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML - Front-End Engineer, 104 - 2021</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header>
+        <img src="/images/Front-End-Developer.png">
+        <h1>Front-End Engineer, Group 104 - 2021</h1>
+        <nav>
+          <ul id="nav-menu">
+              <li><a href="../index.html">first page</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">java script</a></li>
+              <li><a href="#">challenges</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+      <section>
+        <article id="content">
+          <h2>The Box Model</h2>
+          <p>&emsp;The first knowleged we have to understood in html is about the
+            Box Model(CSS) and how to use.
+          <div id="example-box">
+            <div id="margin-box">
+              <div id="border-box">
+                <div id="padding-box">
+                  <div id="content-box">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul id="example-ul">
+              <li>Gray box: Margin;</li>
+              <li>Black box: Border;</li>
+              <li>Content box: Padding;</li>
+              <li>Red box: Content area.</li>
+          </ul>
+          </p>
+          <p>&emsp;All in a html document is a element(<code>&lt;element-tag&gt;</h1></code>)
+            and showed thru a Box-Model, ur first task as a Front-End Engineer is
+            know to manipulate this box.
+          </p>
+          <p>&emsp;A Box-Model have the property(CSS) <code>box-sizing:</code>,
+            and are two values to choose:
+            <ul>
+              <li><code>content-box;</code> (default value)</li>
+              <li><code>border-box;</code>.</li>
+            </ul>
+          </p>
+          <p>&emsp;This property will set how Box-Model will displayed in screen.
+            <img id="box-model-example" src="../images/box-model-example.jpg" alt="box-model example with 100px wide">
+          </p>
+          <p>&emsp;On image above, we see a Box-Model with 100px wide,
+            when property <code>box-sizing:</code> are <code>content-box;</code>,
+            width property will affect just the content size, remember that!.
+          </p>
+          <p>&emsp;Lets supose, content has 100px width, padding 10px, border 1px
+            and margin 10px, this Box-Model on image are 142px wide.
+          </p>
+          <h2>Display</h2>
+          <p>&emsp;Box-Model is the "shape" of a element, but element have a form
+            to be displayed.
+          </p>
+          <p>&emsp;HTML tags are dispose in block content:
+            <ul class="inline-block-ul">
+              <li><code>&lt;ul&gt;</code></li>
+              <li><code>&lt;table&gt;</code></li>
+              <li><code>&lt;div&gt;</code></li>
+              <li><code>&lt;p&gt;</code></li>
+              <li><code>&lt;h1...h6&gt;</code></li>
+            </ul>
+          </p>
+          <p>&emsp;Or inline content:
+            <ul class="inline-block-ul">
+              <li><code>&lt;img&gt;</code></li>
+              <li><code>&lt;bold&gt;</code></li>
+              <li><code>&lt;span&gt;</code></li>
+              <li><code>&lt;a&gt;</code></li>
+            </ul>            
+          </p>
+          <table>
+            <tr>
+              <th colspan="2">Differences of elements</th>
+            </tr>
+            <tr>
+              <th>inline</th>
+              <th>block</th>
+            </tr>
+            <tr>
+              <td>no start on a new line</td>
+              <td>starts on a new line</td>
+            </tr>
+            <tr>
+              <td>width just enough to content</td>
+              <td>full width available of parent element</td>
+            </tr>
+            <tr>
+              <td>can be inside a block element</td>
+              <td>cannot be inside a inline element</td>
+            </tr>
+          </table>
+          <p>&emsp;With property <code>display:</code> we can change how a element will
+            be displayed, as <code>inline;</code> or <code>block;</code>. But remember
+            <code>display:</code> property will change how the element will be renderized
+            on browser.
+            <h4>Heading - Block example</h4>
+            <div class="block-example">Div - Block example</div>
+            <li class="block-example">li - Block example</li>
+            <p class="block-example">Paragraph - Block example.
+            <span id="inline-example">Span - Inline example</span>
+            </p>
+          </p>
+          <h2>Flow of elements</h2>
+          <p>&emsp;Without CSS modifications, the default renderizing of elements in HTML
+            is top to bottom, left to right, in same order as they exist in document. But
+            with properties in CSS is possible change the default position to any place.
+          </p>
+          <p>&emsp;Returning to idea of how a element can be displayed, is important to
+            know a block-level element create a block with full width of their parent,
+            preventing other elements from appearing on your horizontal side.
+          </p>
+          <p>&emsp;To change this, <code>position:</code> property can be used with
+            this values: 
+          <ul id="positions">
+            <li><code>static:</code> the default value, element will positioned in normal
+              flow of elements.</li>
+            <li><code>relative:</code> relative will posite the element in same order of
+              flow, however, is needed specify how much away of <code>top:; , bottom:; ,
+                left:; , right:;</code> the browser will re-positioned the element;</li>
+            <li><code>absolute:</code> aboslute will remove the element from the normal
+              flow and change how the element are positioned, you can specify were element
+              can be positioned choosing the values of properties <code>top:;, bottom:;,
+                left:;, right:;, z-index:;</code>;</li>
+            <li><code>fixed:</code> fixed don't will remove instantly the element of flow,
+              changing just <code>position: fixed;</code>, element will fixed on the original
+              position, and be showed in all webpage height;
+            <li><code>sticky:</code>sticky will stay the element in normal flow, but, when
+              user scrolls down the webpage, if it exceeds the height of the element,
+              the element becomes fixed to the screen and will remain at the height it
+              occupies in the flow.</li> 
+          </ul>
+        </p>
+        <h2>Z-Index</h2>
+        <p>&emsp;Property <code>z-index:</code> controls the "layer" of the element
+        will be part. The "first layer" and default value is 0, can be setted positive
+        and negative numbers, <code>z-index:</code> do not work in <code>position: static;</code>.
+        </p>
+        <p>&emsp;As Front-End Engineers the most important is how and were distribuitate
+          content.
+        </p>
+
+        </article>  
+      </section>
+      <footer>
+      </footer>
+    </main>
+  </body>
+</html>
