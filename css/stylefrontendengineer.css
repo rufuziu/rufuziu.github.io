@@ -13,11 +13,15 @@ html{
 
 p{
     line-height: 2rem;
+    text-align: justify;
+}
+
+h2{
+    margin-top: 50px;
 }
 
 a{
     cursor: pointer;
-    text-decoration: none;
 }
 
 body{
@@ -59,6 +63,7 @@ header li{
 }
 
 header a{
+    text-decoration: none;
     color: white;
     background-color: rgb(16, 22, 47);
     border: 3px solid silver;
@@ -180,9 +185,29 @@ h4{
     background-color: purple;
 }
 
-#positions li{
+.lists li{
     margin: 20px;
     line-height: 1.3rem;
+}
+
+#inline-block-example{
+    width: 341px;
+    height: 110px;
+    background: silver;
+    margin: 0 auto;
+}
+
+.square{
+    display:inline;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#clear-paragraph{
+    background-color: orange;
+    width: 300px;
 }
 
 @media screen and (max-width: 1013px){

@@ -11,11 +11,15 @@
 
 html{
   font-size: 16px;
+  background-color: darkgrey;
 }
 
 #banner{
-  width: 100%;
-  background-color: silver
+  width: 350px;
+  background-color: gray;
+  float: left;
+  border-top: 1px solid lightslategray;
+  border-bottom: 1px solid lightslategray;
 }
 
 #banner img{
@@ -28,9 +32,12 @@ html{
 }
 
 #descrição{
+  max-width: 100%;
   text-align: center;
-  max-width: 50%;
-  margin: 0 auto;
+  margin-top: 150px;
+  background-color: gainsboro;
+  border-top: 1px solid lightslategray;
+  border-bottom: 1px solid lightslategray;
 }
 
 #nome{
@@ -43,28 +50,46 @@ html{
 #local{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  line-height: 2.5rem;
 }
 
 #graduação{
   font-family:  Consolas, Courier, monospace;
-  font-size: 1rem;  
+  font-size: 1rem;
+  line-height: 2.5;  
+}
+
+#graduação:hover{
+  color: yellowgreen;
+}
+
+#menu{  
+  width: 100%;
+  background-color: silver;
+  height: 10.3rem;
+  padding-top: 55px;
+  border-bottom: 1px solid lightslategray;
 }
 
 #menu-bar{
-  max-width: 100%;
+  margin: 0 auto;
+  background-color: silver;
+}
+
+#menu-bar ul{
   text-align: center;
-  margin-top: 10px;
 }
 
 #menu-bar a{
   cursor: pointer;
   text-decoration: none;
   color: black;
-  margin-top: 25px;
+  margin-top: 100px;
   font-family:  Consolas, Courier, monospace;
 }
 
 #menu-bar a:hover{
+  background-color: black;
   color: yellowgreen;
   border: 2px solid black;
   border-radius: 5px;
@@ -79,25 +104,28 @@ html{
 }
 
 #menu-bar li{
-  display: block; 
+ list-style: none;
 }
 
-@media screen and (max-width: 612px ){
-  #nome{
-    font-size: 1.47rem;
-    font-weight: bold;
-  }
+@media screen and (max-width: 654px ){
+#banner{
+  width: auto;
+  margin: 0 auto;
+  float: none;
+}
 
-  #local{
-    font-size: 1rem;
-  }
+#banner img{
+  width: 275px;
+  margin: 0 auto;
+}
 
-  #graduação{
-    font-size: 1rem;
-  }
+#descrição{
+ margin-top: 0;
+}
 
-  #menu-bar li{
-    display: block;
-  }
+#nome{
+  font-size: 2rem;
+}
+
 }
 
