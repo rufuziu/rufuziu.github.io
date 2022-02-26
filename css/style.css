@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: Consolas;
   src: url(../fonts/CONSOLAB.TTF) format('truetype');
 }
@@ -89,8 +89,8 @@ html{
 }
 
 #menu-bar a:hover{
-  background-color: black;
-  color: yellowgreen;
+  background-color: yellowgreen;
+  color: black;
   border: 2px solid black;
   border-radius: 5px;
 }
